@@ -7,10 +7,19 @@ public class exercise_6 {
         Scanner input = new Scanner(System.in);
         System.out.print("Nhap n: ");
         int n = input.nextInt();
+        System.out.println(sum(n));
         System.out.println(sum_1(n));
         System.out.println(sum_2(n));
         System.out.println(sum_3(n));
         input.close();
+    }
+    //S=1+2-3+……(-1)n+1.n
+    public static int sum(int n){
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += Math.pow(-1, i+1) * i;
+        }
+        return sum;
     }
     // S=1!+2!+3!+……+n!
     public static int factorial(int n) {
