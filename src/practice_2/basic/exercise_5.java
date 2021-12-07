@@ -8,7 +8,7 @@ public class exercise_5 {
         int num = input.nextInt();
         System.out.println(Fibonaci(num));
         input.close();
-    }
+}
     // ktra so ngto
     public static boolean prime(int n){
         if (n < 2) return false;
