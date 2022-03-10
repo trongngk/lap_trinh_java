@@ -59,7 +59,7 @@ public class listTienTrinh {
     public void table(){
         System.out.println("So tien trinh la: " + sotientrinh);
         System.out.println("|Process|Thoi gian thuc hien|Thoi gian xuat hien|Thoi gian cho doi|");
-        for(int i = 0; i < listTT.size(); i++){
+        for(int i = 0; i < sotientrinh; i++){
             System.out.printf("| %3d   | %17.2f | %17.2f | %15.2f |\n",i+1,listTT.get(i).thoigianthuchien,listTT.get(i).thoigianxuathien,listTT.get(i).thoigianchodoi);
         }
     }
